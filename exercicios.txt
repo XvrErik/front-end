@@ -1,0 +1,81 @@
+# Exercícios sobre querySelector
+
+Aqui estão os exercícios apenas com as descrições, sem os códigos:
+
+---
+
+## Exercício 1: Seletores Simples
+
+Dado um HTML com um `div` com id "container", um parágrafo com classe "texto" e um botão, faça o seguinte:
+
+1. Selecione o elemento com id "container"
+2. Selecione o primeiro parágrafo com classe "texto"
+3. Selecione todos os parágrafos com classe "texto"
+4. Selecione o botão
+
+---
+
+## Exercício 2: Seletores Combinados
+
+Dado um HTML com uma `section` com classe "conteudo" contendo vários `articles` com `h2` e parágrafos dentro, faça o seguinte:
+
+1. Selecione todos os `h2` dentro dos articles
+2. Selecione apenas o primeiro article
+3. Selecione todos os parágrafos dentro dos articles
+
+---
+
+## Exercício 3: Modificar Conteúdo
+
+Dado um HTML com uma `div` com id "mensagem" e um botão com classe "btn-atualizar", faça o seguinte:
+
+1. Quando o botão for clicado, altere o conteúdo da div para "Mensagem atualizada!"
+2. Mude a cor do texto para azul
+3. Aumente o tamanho da fonte para 18px
+
+---
+
+## Exercício 4: Pseudo-seletores
+
+Dado um HTML com uma lista (`ul`) com classe "lista" contendo 4 itens (`li`), faça o seguinte:
+
+1. Selecione o primeiro item da lista
+2. Selecione o último item da lista
+3. Selecione apenas os itens em posições pares (2º, 4º, etc)
+4. Selecione apenas os itens em posições ímpares
+
+---
+
+## Exercício 5: Atributos e Seletores de Atributo
+
+Dado um formulário com vários inputs (tipo text, email, password) com atributo `required` e um botão de submit, faça o seguinte:
+
+1. Selecione todos os inputs que possuem o atributo `required`
+2. Selecione o input com `name="email"`
+3. Selecione o botão do tipo submit
+4. Altere o placeholder de todos os inputs para "Preencha este campo"
+
+---
+
+## Exercício 6: Filtrando com forEach
+
+Dado um HTML com várias `divs` com classe "card", faça o seguinte:
+
+1. Adicione a classe "ativo" ao primeiro card
+2. Altere o texto de todos os cards para "Card X - Modificado"
+3. Adicione um evento de clique em cada card que mostre no console qual card foi clicado
+
+---
+
+## Exercício 7: Desafio - Criar um TODO List
+
+Dado um HTML com um input, um botão "Adicionar" e uma lista vazia, faça o seguinte:
+
+1. Quando o botão for clicado, pegue o valor do input
+2. Crie um novo item (`li`) e adicione à lista
+3. Limpe o input para poder adicionar a próxima tarefa
+4. Valide se o input não está vazio antes de adicionar
+
+---
+
+Boa sorte nos exercícios! Se precisar de ajuda com algum deles, é só chamar! 😊
