@@ -21,8 +21,23 @@
 <body>
     <h1>testando eventos</h1>
     <hr>
-    <div>
+    <div id="area">
         <p>interaja....</p>
     </div>
+    <script>
+        const evento = window.document.getElementById('area')
+        evento.addEventListener('click', clicar)
+        evento.addEventListener('mouseenter', entrar)
+
+        function entrar(){
+            evento.innerText = "entrou"
+            evento.style.backgroundColor = "red"
+        }
+
+        function clicar(){
+            evento.innerText = "clicou"
+            evento.style.backgroundColor = "blue"
+        }
+    </script>
 </body>
 </html>
