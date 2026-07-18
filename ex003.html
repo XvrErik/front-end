@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        button{
+            background-color: blue;
+            height: 40px;
+            width: 100px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos exercicios</h1>
+    <hr>
+    <p>ola</p>
+    <button id="btn" type="button">
+        mudar texto
+    </button>
+    <script>
+        const texto = window.document.getElementsByTagName('p')[0]
+        const botao = window.document.getElementById('btn')
+        botao.addEventListener('click', clicar)
+
+        function clicar(){
+            texto.innerText = 'texto alterado'
+        }
+    </script>
+</body>
+</html>
