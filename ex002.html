@@ -24,16 +24,18 @@
     <hr>
     <p>o texto abaixo sera alterado</p>
     <p>texto para ser alterado</p>
-    <button id="btn" type="submit">
+    <button id="btn" type="button">
         clicar
     </button>
     <script>
-        const texto = window.document.getElementsByTagName('p')[1]
-        const botao = window.document.getElementById('btn')
+        const texto = document.getElementsByTagName('p')[1]
+        const botao = document.getElementById('btn')
+
         botao.addEventListener('click', clicar)
-        texto.innerText = "o texto foi alterado"
-        function  clicar(){
-            window.alert("botao clicado!")
+
+        function clicar() {
+            texto.innerText = "o texto foi alterado"
+            alert("botao clicado!")
         }
     </script>
 </body>
