@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>query selector</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>aprendendo query selector</h1>
+    <hr>
+    <p id="mensagen">mensagem inicial</p>
+    <script>
+        const texto = window.document.querySelector("#mensagen")
+        texto.innerText = "ola mundo"
+    </script>
+</body>
+</html>
