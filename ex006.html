@@ -32,15 +32,15 @@
     <script>
         const idade = window.document.querySelector("#idade")
         const btn = window.document.querySelector("#verificar")
-        const valorInt = Number(idade.value)
-
         btn.addEventListener("click", clicar)
 
         function clicar(){
-            if (valorint < 18){
-                window.alert(`desculpe mais a sua idade e ${idade} mais a idade minima a 18`)
-            }else{
-                window.alert('ola seja bem vindo')
+            const valorInt = Number(idade.value)
+
+            if (valorInt < 18){
+                window.alert(`desculpe, mas a sua idade é ${valorInt} e a idade mínima é 18`)
+            } else {
+                window.alert('olá, seja bem vindo')
             }
         }
     </script>
