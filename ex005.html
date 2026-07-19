@@ -29,5 +29,25 @@
         const seletorPrimeiroTexto = window.document.querySelector(".texto")
         const seletortexto = window.document.querySelectorAll(".texto")
     </script>
+    <hr>
+
+    <h2>ex02</h2>
+
+    <div id="mensagen">
+        <p>texto teste</p>
+    </div>
+    <button class="atualizar" type="button"></button>
+    <script>
+        const seletorDiv = window.document.querySelector("#mensagen/p")
+        const seletorBotao = window.document.querySelector(".atualizar")
+
+        seletorBotao.addEventListener("click", clicar)
+        function clicar(){
+            seletorDiv.innerText = "texto atualizado"
+            seletorDiv.style.backgroundColor = "blue"
+            seletorDiv.style.fontSize = "18px"
+        }
+
+    </script>
 </body>
 </html>
