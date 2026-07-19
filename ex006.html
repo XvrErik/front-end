@@ -44,5 +44,29 @@
             }
         }
     </script>
+    <hr>
+    <h2>ex002</h2>
+    <h3>par impar</h3>
+    <input type="number" name="num" id="num">
+    <button type="button" id="verificacao">
+        verificar
+    </button>
+
+    <script>
+        const numero = window.document.querySelector("#num")
+        const botao = window.document.querySelector("#verificacao")
+
+        botao.addEventListener("click", clique)
+
+        function clique(){
+            const valInt = Number(numero.value)
+
+            if (valInt %2 == 0){
+                window.alert(`o valor ${numero} e par`)
+            }else{
+                window.alert(`o valor ${numero} e impar`)
+            }
+        }
+    </script>
 </body>
 </html>
