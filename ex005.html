@@ -60,12 +60,13 @@
 
     <script>
         const seletorUl = window.document.querySelectorAll(".lista li")
-        const valorPrimeiro = items[0]
-        const valorUltimo = items[3]
-        const indicesPares = items[2, 4]
-        const indicesImpares = items[1, 3]
 
-        window.alert(`os valores sao: ${valorPrimeiro}, ult ${valorUltimo}, par ${indicesPares}, imp ${indicesImpares}`)
+        const valorPrimeiro = seletorUl[0].textContent
+        const valorUltimo = seletorUl[seletorUl.length - 1].textContent
+        const indicePar = seletorUl[2].textContent
+        const indiceImpar = seletorUl[1].textContent
+
+        window.alert(`os valores são: ${valorPrimeiro}, ult ${valorUltimo}, par ${indicePar}, imp ${indiceImpar}`)
     </script>
 
 </body>
