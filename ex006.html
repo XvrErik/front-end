@@ -147,11 +147,10 @@
 
         btn5.addEventListener("click", click5)
         function click5(){
-            msg.innerText = "dica: e um inicio, num"
             const usersenha = Number(senha.value)
 
             if (usersenha != 1234){
-                window.alert("acesso negado")
+                window.alert("acesso negado, dica: e um inicio, num")
             }else{
                 window.alert("acesso consedido")
             }
