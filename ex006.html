@@ -133,5 +133,29 @@
             }
         }
     </script>
+    <hr>
+    <h2>ex005</h2>
+    <h3>senha</h3>
+    <input type="password" name="senha" id="senha">
+    <button type="button" id="botao5">
+        verificar
+    </button>
+    <script>
+        const msg = window.document.querySelector("h3")
+        const senha = window.document.querySelector("#senha")
+        const btn5 = window.document.querySelector("#botao5")
+
+        btn5.addEventListener("click", click5)
+        function click5(){
+            msg.innerText = "dica: e um inicio, num"
+            const usersenha = Number(senha.value)
+
+            if (usersenha != 1234){
+                window.alert("acesso negado")
+            }else{
+                window.alert("acesso consedido")
+            }
+        }
+    </script>
 </body>
 </html>
