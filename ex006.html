@@ -9,6 +9,9 @@
             background-color: gray;
         }
         input{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             height: 40px;
             width: 300px;
             border-radius: 5px;
@@ -92,6 +95,41 @@
                 window.alert(`o valor ${val1} e igual ao valor ${val2}`)
             } else {
                 window.alert(`o valor ${val1} e menos que ${val2}`)
+            }
+        }
+    </script>
+    <hr>
+    <h2>ex04</h2>
+    <h3>medias</h3>
+    <input type="number" name="nota1" id="nota1">
+    <input type="number" name="nota2" id="nota2">
+    <input type="number" name="nota3" id="nota3">
+    <input type="number" name="nota4" id="nota4">
+
+    <button type="button" id="botao4">
+        verifique
+    </button>
+    <script>
+        const notas1 = window.document.querySelector("#nota1")
+        const notas2 = window.document.querySelector("#nota2")
+        const notas3 = window.document.querySelector("#nota3")
+        const notas4 = window.document.querySelector("#nota4")
+        const btn4 = window.document.querySelector("#botao4")
+
+        btn4.addEventListener("click", click4)
+
+        function click4(){
+            const val01 = Number(notas1.value)
+            const val02 = Number(notas1.value)
+            const val03 = Number(notas1.value)
+            const val04 = Number(notas1.value)
+            
+            r = val1 + val2 + val3 + val4 /2
+
+            if (r >= 24){
+                window.alert("aluno aprovado!")
+            }else{
+                window.alert("aluno reprovado!")
             }
         }
     </script>
