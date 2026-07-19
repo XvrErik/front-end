@@ -17,7 +17,7 @@
         button{
             width: 100px;
             height: 40px;
-            background-color: aqua;
+            background-color: blue;
             border-radius: 5px;
         }
     </style>
@@ -65,6 +65,33 @@
                 window.alert(`o valor ${valInt} e par`)
             }else{
                 window.alert(`o valor ${valInt} e impar`)
+            }
+        }
+    </script>
+    <hr>
+    <h2>ex003</h2>
+    <h3>comparar dois numeros</h3>
+    <input type="number" name="num1" id="num1">
+    <input type="number" name="num2" id="num2">
+    <button type="button"id="botao03">
+        verificar
+    </button>
+    <script>
+        const numero1 = window.document.querySelector("#num1")
+        const numero2 = window.document.querySelector("#num2")
+        const botao3 = window.document.querySelector("#botao03")
+        
+        const val1 = Number(numero1.value)
+        const val2 = Number(numero2.value)
+        botao3.addEventListener("click", click3)
+
+        function click3(){
+            if(val1 > val2){
+                window.alert(`o valor ${val1} e maior que ${val2}`)
+            }else if (val1 == val2) {
+                window.alert(`o valor ${val1} e igual ao valor ${val2}`)
+            } else {
+                window.alert(`o valor ${val1} e menos que ${val2}`)
             }
         }
     </script>
