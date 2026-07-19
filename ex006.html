@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,8 +26,23 @@
     <h1>verificar idade</h1>
     <hr>
     <input type="number" name="idade" id="idade">
-    <button type="button">
+    <button type="button" id="verificar">
         verificar
     </button>
+    <script>
+        const idade = window.document.querySelector("#idade")
+        const btn = window.document.querySelector("#verificar")
+        const valorInt = Number(idade.value)
+
+        btn.addEventListener("click", clicar)
+
+        function clicar(){
+            if (valorint < 18){
+                window.alert(`desculpe mais a sua idade e ${idade} mais a idade minima a 18`)
+            }else{
+                window.alert('ola seja bem vindo')
+            }
+        }
+    </script>
 </body>
 </html>
