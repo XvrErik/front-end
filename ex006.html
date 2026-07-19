@@ -81,11 +81,11 @@
         const numero2 = window.document.querySelector("#num2")
         const botao3 = window.document.querySelector("#botao03")
         
-        const val1 = Number(numero1.value)
-        const val2 = Number(numero2.value)
         botao3.addEventListener("click", click3)
 
         function click3(){
+            const val1 = Number(numero1.value)
+            const val2 = Number(numero2.value)
             if(val1 > val2){
                 window.alert(`o valor ${val1} e maior que ${val2}`)
             }else if (val1 == val2) {
