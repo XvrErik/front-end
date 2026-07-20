@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usando switch</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        input{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 40px;
+            width: 300px;
+            border-radius: 5px;
+            font-size: 35px;
+            color: black;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            background-color: darkblue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" name="escolha" id="escolha">
+    <button type="button" id="botao">
+
+    </button>
+    <p></p>
+    <script>
+        const texto = window.document.querySelector("p")
+        const valor = window.document.querySelector("input#escolha")
+        const btn = window.document.querySelector("button#botao")
+        
+        btn.addEventListener("click", clicar)
+        function clicar(){
+            const uservalue = Number(valor.value)
+            switch (uservalue) {
+                case uservalue == 1:
+                    texto.innerText = "voce escolheu o item 1"
+                    break;
+                case uservalue == 2:
+                    texto.innerText = "voce escolheu o item 2"
+                    break
+                case uservalue == 3:
+                    texto.innerText = "voce escolheu o item 3"
+                    break
+                case uservalue == 4:
+                    texto.innerText = "voce escolheu o item 4"
+                    
+                default:
+                    texto.innerText = "valor invalido"
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
