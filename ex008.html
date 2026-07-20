@@ -22,11 +22,10 @@
             if (uservalue < 0){
                 window.alert(`o valor ${uservalue} e invalido`)
             }else{
-                const cont = 0
-                texto.innerText = "valores pares"
+                let cont = 0
                 while (cont <= uservalue) {
                     if (cont %2 === 0){
-                        document.write(cont + " ")
+                        texto.innerText = `os valores pares sao ${cont}`
                     }
                     cont +=1
                 }
