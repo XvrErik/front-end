@@ -1,0 +1,18 @@
+body{
+    background-color: gray;
+}
+input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    color: black;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 5px;
+}

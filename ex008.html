@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    informe um numero:<input type="number" name="numero" id="numero">
+    <button type="button" id="botao">
+        executar
+    </button>
+    <p></p>
+    <script>
+        const texto = window.document.querySelector("p")
+        const num = window.document.querySelector("input#numero")
+        const btn = window.document.querySelector("button#botao")
+        btn.addEventListener("click", clicar)
+        function clicar(){
+            const uservalue = Number(num.value)
+            if (uservalue < 0){
+                window.alert(`o valor ${uservalue} e invalido`)
+            }else{
+                const cont = 1
+                while (cont <= uservalue) {
+                    if (uservalue %2 == 0){
+                        texto.innerText = `os valores pares sao: ${uservalue}`
+                    }
+                cont +=1
+                }
+            }
+        }
+    </script>
+</body>
+</html>
