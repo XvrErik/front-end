@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="number" name="numero" id="numero">
+    <button type="button" id="botao">
+        execute
+    </button>
+    <p></p>
+    <script>
+        let texto = window.document.querySelector("p")
+        let num = window.document.querySelector("input#numero")
+        let btn = window.document.querySelector("button#botao")
+        btn.addEventListener("click", clicar)
+        function clicar(){
+            let uservalue = Number(num.value)
+            texto.innerText = `valores entre 0 e ${uservalue}`
+            let con = 0
+            do{
+                texto.innerText = `${con}`
+                con +=1
+            }while(cont <= uservalue)
+        }
+    </script>
+</body>
+</html>
