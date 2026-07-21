@@ -1,6 +1,7 @@
-for (var con; con <= 20; con +=1){
+let soma = 0
+for (var con = 1; con <= 20; con +=1){
     if (con %2 == 0){
-        con += con
-        console.log(con)
+       soma += con
+        console.log(soma)
     }    
 }
