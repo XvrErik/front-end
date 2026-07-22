@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio de loops</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button type="button" id="botao">
+        clique
+    </button>
+    <p></p>
+    <script>
+        let btn = window.document.querySelector("button#botao")
+        const texto = window.document.querySelector("p")
+        btn.addEventListener("click", clicar)
+        let con = 0
+        function clicar(){
+            con += 1
+            texto.innerText = `cliques: ${con}`
+        }
+    </script>
+</body>
+</html>
