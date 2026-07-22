@@ -47,12 +47,11 @@
                 default:
                     let usernumeros = []
                     usernumeros.push = uservalue
-                    for (let con in usernumeros){
-                        const mostrar = document.createElement("option")
-                        mostrar.value = `${con}`
-                        mostrar.text = `${con}`
-                        saida.appendChild(mostrar)
-                    }
+                    
+                    const mostrar = document.createElement("option")
+                    mostrar.value = `${usernumeros}`
+                    mostrar.text = `${usernumeros}`
+                    saida.appendChild(mostrar)
                     break;
             }
         }
