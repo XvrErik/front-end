@@ -39,18 +39,12 @@
                 case uservalue < 1:
                     alert(`o valor ${uservalue} nao e valido pois ele e menor que 1`)
                     break
-
-                case uservalue == null:
-                    alert("a caixa nao pode estar vazia")
-                    break
-            
+ 
                 default:
-                    let usernumeros = []
-                    usernumeros.push = uservalue
                     
                     const mostrar = document.createElement("option")
-                    mostrar.value = `numero: ${valor}`
-                    mostrar.text = `numero: ${valor}`
+                    mostrar.value = `numero: ${uservalue}`
+                    mostrar.text = `numero: ${uservalue}`
                     saida.appendChild(mostrar)
                     break;
             }
