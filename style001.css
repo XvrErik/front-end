@@ -1,23 +1,45 @@
 body{
     background-color: #0faae8;
-}
-input{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 130px;
-    height: 35px;
-    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.div{
-    background-color: white;
-    justify-content: center;
-    box-sizing: 500px;
-    box-shadow: 5px;
+#caixa{
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 360px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    border-radius: 8px;
 }
-.button{
+
+#caixa input{
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#botao{
     background-color: cadetblue;
-    width: 50px;
-    height: 40px; 
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#botao:hover{
+    opacity: 0.95;
+}
+
+p{
+    margin-top: 12px;
+    font-size: 16px;
+    color: #111;
 }
