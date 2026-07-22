@@ -30,8 +30,9 @@
             const valorInicio = Number(inicio.value)
             const valorFinal = Number(final.value)
             const valorPasso = Number(passo.value)
-            for (let con = valorInicio;con <= valorFinal; cont += valorPasso){
-                texto.innerHTML = `&#128073; ${con}`
+            texto.innerHTML = ''
+            for (let con = valorInicio; con <= valorFinal; con += valorPasso){
+                texto.innerHTML += `&#128073; ${con} `
             }
 
         }
