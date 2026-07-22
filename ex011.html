@@ -14,13 +14,16 @@
 
     </ul>
     <script>
-        const btn = window.document.querySelector("button#botao")
-        let lista = window.document.querySelector("ul#lista")
+        const btn = document.querySelector("button#botao")
+        const lista = document.querySelector("ul#lista")
+
         btn.addEventListener("click", clicar)
-        function clicar(){
-            for (let con = 1;con <= 10;con +=1){
-               let valor =  document.createElement("li")
-               valor.value = con
+
+        function clicar() {
+            for (let con = 1; con <= 10; con += 1) {
+                let valor = document.createElement("li")
+                valor.textContent = `${con}`
+                lista.appendChild(valor)
             }
         }
     </script>
