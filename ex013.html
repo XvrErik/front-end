@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabuada</title>
+    <link rel="stylesheet" href="style001.css">
+</head>
+<body>
+    <h1>tabuada</h1>
+    <div>
+        <input type="number" name="numero" id="numero">
+        <button type="button" id="botao">
+            veja
+        </button>
+        <select name="exibicao" id="exibicao">
+
+        </select>
+    </div>
+    <script>
+        const btn = window.document.querySelector("button#botao")
+        const exibir = window.document.querySelector("select#exibicao")
+        const num = window.document.querySelector("input#numero")
+
+        btn.addEventListener("click", calcular)
+        function calcular(){
+            userValor = Number(num.value)
+            for (let con = 1;con <=10;con +=1){
+                const novaOpcao = document.createElement("opition")
+                novaOpcao.value = `${num} x ${con} = ${num * con}`
+                exibir.appendChild(novaOpcao)
+            }
+        }
+    </script>
+</body>
+</html>
