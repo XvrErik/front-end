@@ -31,6 +31,12 @@
             const valorInicio = Number(inicio.value)
             const valorFinal = Number(final.value)
             const valorPasso = Number(passo.value)
+            if (valorInicio <= 0){
+                texto.innerText = "nao e possivel contar"
+            }else if(valorPasso <=0){
+                alert("nao da para contar no passo 0")
+                valorPasso += 1
+            }
             texto.innerHTML = ''
             for (let con = valorInicio; con <= valorFinal; con += valorPasso){
                 texto.innerHTML += `&#128073; ${con} `
