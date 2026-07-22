@@ -30,6 +30,7 @@
 
         btnAdicionar.addEventListener("click", adicionar)
         function adicionar(){
+            let numeros = []
             const uservalue = Number(valor.value)
             switch (true) {
                 case uservalue > 100:
@@ -39,6 +40,10 @@
                 case uservalue < 1:
                     alert(`o valor ${uservalue} nao e valido pois ele e menor que 1`)
                     break
+
+                case numeros.indexOf(uservalue) != -1:
+                    alert("o valor digitado ja existe")
+                    break
  
                 default:
                     
@@ -46,8 +51,10 @@
                     mostrar.value = `numero: ${uservalue}`
                     mostrar.text = `numero: ${uservalue}`
                     saida.appendChild(mostrar)
+                    numeros.push(uservalue)
                     break;
             }
+            
         }
     </script>
 </body>
