@@ -31,6 +31,7 @@
         let numeros = []
 
         btnAdicionar.addEventListener("click", adicionar)
+        btnFinalizar.addEventListener("click", finalizar)
         function adicionar(){
             const uservalue = Number(valor.value)
             switch (true) {
@@ -54,6 +55,10 @@
                     numeros.push(uservalue)
                     break;
             }
+        }
+        function finalizar(){
+            texto.innerHTML = `ao todo <strong>temos ${numeros.length}</strong> cadastrados`
+            texto.innerText = `o maior numero e ${numeros.Math.max}`
         }
     </script>
 </body>
