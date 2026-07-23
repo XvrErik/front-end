@@ -10,13 +10,13 @@
     <h1>analizador de numeros</h1>
     <div id="caixa">
         numero (entre 1 e 100):<input type="number" name="numero" id="numero">
-        <button type="button" class="botaoadicionar" id="botao">
+        <button type="button" class="botaoadicionar" id="botaoadicionar">
             adicionar
         </button>
         <select name="saida" id="saida">
 
         </select>
-        <button type="button" class="finalizar" id="botao">
+        <button type="button" class="finalizar" id="finalizar">
             finalizar
         </button>
         <p id="texto1"></p>
@@ -24,18 +24,19 @@
         <p id="texto3"></p>
         <p id="texto4"></p>
         <p id="texto5"></p>
-        <p>abrigado por utilizar </p>        
+        <p id="texto6"></p>        
     </div>
     <script>
         const texto1 = window.document.querySelector("p#texto1")
         const texto2 = window.document.querySelector("p#texto2")
         const texto3 = window.document.querySelector("p#texto3")
         const texto4 = window.document.querySelector("p#texto4")
-        const texto5 = window.document.querySelector("p#texto5")        
+        const texto5 = window.document.querySelector("p#texto5")
+        const texto6 = window.document.querySelector("p#texto6")        
         const valor = window.document.querySelector("input#numero")
         const saida = window.document.querySelector("select#saida")
-        const btnAdicionar = window.document.querySelector("button.botaoadicionar")
-        const btnFinalizar = window.document.querySelector("button.finalizar")
+        const btnAdicionar = window.document.querySelector("button#botaoadicionar")
+        const btnFinalizar = window.document.querySelector("button#finalizar")
 
         let numeros = []
 
@@ -73,8 +74,8 @@
             const media = soma / numeros.length;
             //calcular a media dos valores
             texto1.innerHTML = `ao todo <strong>temos ${numeros.length}</strong> cadastrados`
-            texto2.innerHTML = `o maior numero <strong>e ${numeros.Math.max}</strong>`
-            texto3.innerHTML = `o menor numero <strong>foi ${numeros.Math.min}`
+            texto2.innerHTML = `o maior numero <strong>e ${Math.max(...numeros)}</strong>`
+            texto3.innerHTML = `o menor numero <strong>foi ${Math.min(...numeros)}</strong>`
             texto4.innerHTML = `a soma de todos os valores <strong>e ${soma}</strong>`
             texto5.innerHTML = `e a media dos valores <strong>e ${media}</strong>`
         }
