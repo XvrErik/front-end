@@ -19,10 +19,18 @@
         <button type="button" class="finalizar" id="botao">
             finalizar
         </button>
-        <p></p>
+        <p id="texto1"></p>
+        <p id="texto2"></p>
+        <p id="texto3"></p>
+        <p id="texto4"></p>
+        <p id="texto5"></p>        
     </div>
     <script>
-        const texto = window.document.querySelector("p")
+        const texto1 = window.document.querySelector("p#texto1")
+        const texto2 = window.document.querySelector("p#texto2")
+        const texto3 = window.document.querySelector("p#texto3")
+        const texto4 = window.document.querySelector("p#texto4")
+        const texto5 = window.document.querySelector("p#texto5")        
         const valor = window.document.querySelector("input#numero")
         const saida = window.document.querySelector("select#saida")
         const btnAdicionar = window.document.querySelector("button.botaoadicionar")
@@ -57,8 +65,17 @@
             }
         }
         function finalizar(){
-            texto.innerHTML = `ao todo <strong>temos ${numeros.length}</strong> cadastrados`
-            texto.innerHTML = `o maior numero e ${numeros.Math.max}`
+            let soma = 0
+            for (let i = 0; i < numeros.length; i++) {
+                soma += numeros[i]
+            }
+            const media = soma / numeros.length;
+            //calcular a media dos valores
+            texto1.innerHTML = `ao todo <strong>temos ${numeros.length}</strong> cadastrados`
+            texto2.innerHTML = `o maior numero <strong>e ${numeros.Math.max}</strong>`
+            texto3.innerHTML = `o menor numero <strong>foi ${numeros.math.min}`
+            texto4.innerHTML = `a soma de todos os valores <strong>e ${soma}</strong>`
+            texto5.innerHTML = `e a medis dos valores <strong>e ${media}</strong>`
         }
     </script>
 </body>
