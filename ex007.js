@@ -1,4 +1,4 @@
-function parimpar(n) {
+/*function parimpar(n) {
     if (n %2 ==0){
         return 'par'
     }else{
@@ -27,5 +27,14 @@ let fatorialres = fatorial(5)
 console.log(res)
 console.log(somar)
 console.log(multiplicar)
-console.log(fatorialres)
+console.log(fatorialres)*/
 
+let arr = [5, 7, 3, 8, 2]
+const num = 9
+if (arr.indexOf(num) != -1){
+    console.log("o valor ja existe");
+    
+}else{
+    arr.push(num)
+    console.log(arr)
+}
